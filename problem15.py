@@ -1,3 +1,9 @@
+# QUESTION:
+# ===================================================================================================
+# Starting in the top left corner of a 2×2 grid, and only being able to move to the right and down, there are exactly 6 routes to the bottom right corner.
+# How many such routes are there through a 20×20 grid?
+
+
 # I started with counting the number of nodes given an (n*n) grid.
 # The number of nodes in an n*n grid is (n+1)^2
 # The best way to find out the total number of paths from (0,0) to (n,n) on the grid was by finding the number of possible paths to (n,n) from points (n-1,n-1), (n-2, n-1), and so on.
@@ -56,7 +62,7 @@ def lattice(n):
     print("The number of unique paths is ", nop)
 
 
-# Test our algorithm on n=20, as the problem asks.
+# Test our algorithm on n=20, as the problem presents.
 lattice(20)
 
 # We get an answer of 137846528820, which is correct
